@@ -1,0 +1,9 @@
+@()
+
+@helper.form(action = routes.Security.login()) {
+
+	@formEntry("Username", "text")
+	@formEntry("Password", "text")
+	@formEntry("Submit", "submit")
+  
+}

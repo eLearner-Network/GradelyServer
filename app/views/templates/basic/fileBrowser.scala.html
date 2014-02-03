@@ -1,0 +1,102 @@
+@(url: String)
+								<div id="file-browser">
+									<div id="file-browser-header">
+										<h2 id="folder-name">Directory</h2>
+										<span id="file-browser-top-actions">
+											
+													<!--<a class="file-top-popup-action" href="">
+														<img src="images/icons/delete.png" alt="delete">
+														Delete Folder
+													</a>-->
+													
+													<a class="file-top-popup-action" href="">
+														<img src="images/icons/arrow_up.png" alt="delete">
+														Upload New file
+													</a>
+													
+													<!--<a class="file-top-popup-action" href="">
+														<img src="images/icons/textfield_rename.png" alt="delete">
+														Rename Folder
+													</a>-->
+										</span>
+									</div><!-- #file-browser-header -->
+									
+									<table id="file-browser-content">
+										
+										<tr class="file-header">
+											<td class="file-type-icon">&nbsp;</td>
+											<td class="file-name">File Name</td>
+											<td class="file-size">File Size</td>
+											<td class="file-modifed">Time Modified</td>
+										</tr>
+										
+										<tr class="file folder" onclick="filePopupShow(this);">
+											<td class="file-type-icon">&nbsp;</td>
+											<td class="file-name">Folder Name</td>
+											<td class="file-size">74kb</td>
+											<td class="file-modifed">Apr 22, 2013</td>
+										</tr>
+										
+										<tr class="file" onclick="filePopupShow(this);">
+											<td class="file-type-icon">&nbsp;</td>
+											<td class="file-name">File Name</td>
+											<td class="file-size">82 kB</td>
+											<td class="file-modifed">Apr 22, 2013</td>
+										</tr>
+										
+										<tr class="file-popup" id="isiskd93">
+											<td class="file-popup-row" colspan="4">
+												<span class="file-popup-entry">
+													<a class="file-popup-action" href="">
+														<img src="images/icons/delete.png" alt="delete">
+														Delete
+													</a>
+												</span>
+												
+												<span class="file-popup-entry">
+													<a class="file-popup-action" href="">
+														<img src="images/icons/textfield_rename.png" alt="rename">
+														Rename
+													</a>
+												</span>
+												
+												<span class="file-popup-entry">
+													<a class="file-popup-action" href="">
+														<img src="images/icons/page_white_copy.png" alt="Copy">
+														Copy
+													</a>
+												</span>
+												
+												<span class="file-popup-entry">
+													<a class="file-popup-action" href="">
+														<img src="images/icons/page_white_get.png" alt="upload into">
+														Upload Into
+													</a>
+												</span>
+	
+												<span class="file-popup-entry">
+													<a class="file-popup-action" href="">
+														<img src="images/icons/page_white_put.png" alt="download">
+														Download
+													</a>
+												</span>
+											</td>
+										</tr>
+										
+										<tr class="file">
+											<td class="file-type-icon">&nbsp;</td>
+											<td class="file-name">File Name</td>
+											<td class="file-size">82 kB</td>
+											<td class="file-modifed">Apr 22, 2013</td>
+										</tr>
+										
+										<tr class="file">
+											<td class="file-type-icon">&nbsp;</td>
+											<td class="file-name">File Name</td>
+											<td class="file-size">82 kB</td>
+											<td class="file-modifed">Apr 22, 2013</td>
+										</tr>
+										
+									</table><!-- #file-browser-content -->
+								
+								</div><!-- #filebrowser -->

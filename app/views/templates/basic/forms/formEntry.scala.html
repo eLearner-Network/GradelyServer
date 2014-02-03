@@ -1,0 +1,14 @@
+@(title: String, formtype: String)
+
+@*
+The title should be the display name. It will get converted into an appropriate html id.
+*@
+
+@makeId(text: String) = @{
+  text.toLowerCase.split(' ')
+}
+
+	<div class="form-input">
+		<input id="@makeId(title)" type="@formtype" />
+		<label for="@makeId(title)"> @title </label>
+	</div>

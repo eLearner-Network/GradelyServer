@@ -1,0 +1,36 @@
+@()	@* (user: User) *@ 
+
+						<script type="text/javascript">
+							
+							//Shows the file edit and methods popups
+							function filePopupShow(element)
+							{
+								//console.log("filePopupShow is running");
+								//console.log(element);
+								var next = $(element).next();
+								//console.log(next);
+								next.toggle(200);
+								//$(element).next().animate({display: "block"});
+							
+							}
+							
+							function settingsPopupShow()
+							{
+								$('#settings-dropdown').toggle(0);
+							}
+				
+							
+						</script>
+								
+						<ul id="user" onclick="settingsPopupShow()">
+							<li id="settings">
+								<span id="settings-text">Settings &#x25BC;</span>
+								<ul id="settings-dropdown">
+									<li>Item 1</li>
+									<li>Item 2</li>
+									<li>Item 3</li>
+									<li>Item 4</li>
+								</ul>
+							</li>			
+
+						</ul>
